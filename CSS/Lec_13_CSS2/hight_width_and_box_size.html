@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High, Width and Box Size</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        font-family: sans-serif;
+        color: orange;
+    }
+
+    .box1 {
+        background-color: lightblue;
+        border: 5px solid red;
+        height: 200px; 
+        width: 200px; 
+        
+    }
+     .box1 {
+        box-sizing: border-box;
+        background-color: lightblue;
+        border: 10px solid red;
+        height: 200px; 
+        width: 200px; 
+        padding: 20px;
+        margin-bottom: 10px;
+    } 
+    .box1 {
+        box-sizing: content-box;    
+        background-color: lightblue;
+        border: 5px solid red;
+        height: 200px; 
+        width: 200px; 
+        padding: 2rem;
+        margin: 10px;
+    }
+
+</style>
+
+<body>
+    <h1>Box Model Sizing and hight-width</h1>
+    <div class="box1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim doloribus modi pariatur eveniet laudantium,
+        </p>
+    </div>
+    <div class="box1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim doloribus modi pariatur eveniet laudantium,
+        </p>
+    </div>
+    
+</body>
+
+</html>

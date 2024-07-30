@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel UI</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .menu {
+        height: 80px;
+        background-color: lightblue;
+        border: 1px solid red;
+    }
+
+    .formula {
+        height: 30px;
+        background-color: khaki;
+        border: 1px solid red;
+    }
+
+    .sheet {
+        height: 20px;
+        background-color: beige;
+        border: 1px solid grey;
+    }
+
+    .grid {
+        height: calc(100vh - 130px);
+        background-color: lightgreen;
+        overflow: auto;
+    }
+
+    .top-row {
+        height: 1.5rem;
+        display: flex;
+    }
+
+    .top-row>* {
+        height: 100%;
+    }
+
+    .top-left {
+        min-width: 2.5rem;
+        border-bottom: 3px solid grey;
+        border-right: 3px solid grey;
+        background-color: aliceblue;
+
+
+    }
+
+    .rows-box {
+
+        display: flex;
+
+    }
+    .column-box{
+        display: flex;
+        flex-direction: column;
+        display: inline;
+
+        
+    }
+
+    .cell {
+        width: 6rem;
+        border: 1px solid grey;
+        text-align: center;
+    }
+    .column-cell{
+        width: 2.5rem;
+        border: 1px solid grey;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+</style>
+
+<body>
+    <div class="menu"></div>
+    <div class="formula"></div>
+    <div class="grid">
+        <div class="top-row">
+            <div class="top-left"></div>
+            <div class="rows-box">
+                <div class="cell">A</div>
+                <div class="cell">B</div>
+                <div class="cell">C</div>
+                <div class="cell">D</div>
+                <div class="cell">E</div>
+                <div class="cell">F</div>
+                <div class="cell">G</div>
+                <div class="cell">H</div>
+                <div class="cell">I</div>
+                <div class="cell">J</div>
+                <div class="cell">K</div>
+                <div class="cell">L</div>
+                <div class="cell">M</div>
+                <div class="cell">N</div>
+                <div class="cell">O</div>
+                <div class="cell">P</div>
+                <div class="cell">Q</div>
+                <div class="cell">R</div>
+                <div class="cell">S</div>
+                <div class="cell">T</div>
+                <div class="cell">U</div>
+                <div class="cell">V</div>
+                <div class="cell">W</div>
+                <div class="cell">X</div>
+                <div class="cell">Y</div>
+                <div class="cell">Z</div>
+            </div>
+        </div>
+        <div class="side-row">
+            <div class="column-box">
+                <div class="column-cell">1</div>
+                <div class="column-cell">2</div>
+                <div class="column-cell">3</div>
+                <div class="column-cell">4</div>
+                <div class="column-cell">5</div>
+                <div class="column-cell">6</div>
+                <div class="column-cell">7</div>
+                <div class="column-cell">8</div>
+                <div class="column-cell">9</div>
+                <div class="column-cell">10</div>
+                <div class="column-cell">11</div>
+                <div class="column-cell">12</div>
+                <div class="column-cell">13</div>
+                <div class="column-cell">14</div>
+                <div class="column-cell">15</div>
+                <div class="column-cell">16</div>
+                <div class="column-cell">17</div>
+                <div class="column-cell">18</div>
+                <div class="column-cell">19</div>
+                <div class="column-cell">20</div>
+                <div class="column-cell">21</div>
+                <div class="column-cell">22</div>
+                <div class="column-cell">23</div>
+                <div class="column-cell">24</div>
+                <div class="column-cell">25</div>
+                <div class="column-cell">26</div>
+                <div class="column-cell">27</div>
+                <div class="column-cell">28</div>
+                <div class="column-cell">29</div>
+                <div class="column-cell">30</div>
+                <div class="column-cell">31</div>
+                <div class="column-cell">32</div>
+                <div class="column-cell">33</div>
+                <div class="column-cell">34</div>
+                <div class="column-cell">35</div>
+                <div class="column-cell">36</div>
+                <div class="column-cell">37</div>
+                <div class="column-cell">38</div>
+                <div class="column-cell">39</div>
+                <div class="column-cell">40</div>
+                <div class="column-cell">41</div>
+                <div class="column-cell">42</div>
+                <div class="column-cell">43</div>
+                <div class="column-cell">44</div>
+                <div class="column-cell">45</div>
+                <div class="column-cell">46</div>
+                <div class="column-cell">47</div>
+                <div class="column-cell">48</div>
+                <div class="column-cell">49</div>
+                <div class="column-cell">50</div>
+            </div>
+        </div>
+            
+        
+    </div>
+    <div class="sheet"></div>
+</body>
+
+</html>

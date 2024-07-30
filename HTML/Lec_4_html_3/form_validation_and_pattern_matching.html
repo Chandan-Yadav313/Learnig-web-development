@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation and Pattern matching</title>
+</head>
+<style>
+    input:invalid{
+        border: 2px solid red;
+    }
+    input:valid{
+        border: 2px solid green;
+    }
+
+</style>
+<body>
+    <form action="/hdfdhfhd">
+        
+        <label for="full name">Full Name:</label><br>
+        <input type="text" id="full name" placeholder="Full Name" required><br><br>
+
+        <label for="email address">Email Address:</label><br>
+        <input type="email" id="email address" placeholder="Email Address" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" placeholder="Password"  required><br><br>
+
+        <label for="birthdate">Date of Birth:</label><br>
+        <input type="text" id="birthdate" placeholder="Date of Birth" pattern="\d{4}-\d{2}-\d{2}" required><br><br>
+
+        <label for="phone number">Phone Number:</label><br>
+        <input type="text" id="phone number" placeholder="Phone Number"  pattern="[+][9][1]\d{10}"><br><br>
+
+        <label for="Credit Card Number">Credit Card Number:</label><br>
+        <input type="text" id="Credit Card Number" placeholder="Credit Card Number" pattern="\d{16}" required><br><br>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" placeholder="Username" pattern="^[a-zA-Z0-9]+$" required><br><br>
+
+        <label for="url">Website URL:</label><br>
+        <input type="url" id="url" placeholder="Website url" pattern="https?://.+" required><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+
+</html>

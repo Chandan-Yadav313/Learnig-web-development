@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        font-family: sans-serif;
+        color: orange;
+    }
+
+    .block {
+        background-color: aqua;
+        width: 100px;
+        height: 100px;
+        display: block;
+        border: 3px solid red;
+        padding: 10px;
+        margin: 10px;
+        /* margin, padding, border, height and width are all apply on display property block*/
+    }
+
+    .inline {
+        background-color: lightgreen;
+        display: inline;
+        height: 10px;
+        width: 20px;
+        border: solid red;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        /*height and width not working in all direction in inline display property*/
+
+        /* margin top and bottom not working*/
+
+        /*border and padding working in all direction in inline display property*/
+
+    }
+
+    .inline-block {
+        background-color: lightgreen;
+        display: inline-block;
+        height: 10px;
+        width: 200px;
+        border: solid red;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        /* margin, padding, border, height and width are all apply on display property block*/
+    }
+</style>
+
+<body>
+    <h1>Display Property</h1>
+    <!-- <div class="block">
+        display property block
+    </div> -->
+
+    <!-- <div class="inline">I am Inline</div>
+    <div class="inline">I am Inline</div> -->
+
+    <div class="inline-block">I am Inline-Block</div>
+    <div class="inline-block">I am Inline-Block</div>
+</body>
+
+</html>

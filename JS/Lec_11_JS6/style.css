@@ -1,0 +1,19 @@
+
+h1{
+    background-color: brown;
+}
+
+.p{
+    background-color:rgba(222, 152, 22, 0.575) ;
+    border-style: groove;
+}
+button{
+    background-color: beige;
+}
+.box{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin-top: 12px;
+}
