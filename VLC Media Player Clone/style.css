@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Roboto&display=swap');
+body{
+    font-family: "Roboto", sans-serif;
+}
+header {
+
+    height: 3rem;
+}
+
+.title-bar {
+    height: 50%;
+    background-color: #d3d3d38b;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.title-image {
+    height: 80%;
+}
+
+.title {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.menu-bar {
+    display: flex;
+    gap: 1rem;
+    margin-left: 5px;
+    height: 50%;
+    align-items: center;
+    font-size: 13px;  
+
+}
+
+footer {
+    background-color: #d3d3d38b;
+    height: 3rem;
+}
+
+main {
+    background-color: black;
+    height: calc(100vh - 6rem);
+}
