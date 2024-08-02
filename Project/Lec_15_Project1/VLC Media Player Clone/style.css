@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Roboto&display=swap');
-body{
+
+body {
     font-family: "Roboto", sans-serif;
 }
+
 header {
 
     height: 3rem;
@@ -13,7 +15,7 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
-    
+
 }
 
 .title-image {
@@ -31,7 +33,7 @@ header {
     margin-left: 5px;
     height: 50%;
     align-items: center;
-    font-size: 13px;  
+    font-size: 13px;
 
 }
 
@@ -43,4 +45,33 @@ footer {
 main {
     background-color: black;
     height: calc(100vh - 6rem);
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-playback {
+    position: absolute;
+    background-color: white;
+    top: 6px;
+    width: 90px;
+
+}
+.menu-audio {
+    position: absolute;
+    background-color: white;
+    top: 6px;
+    width: 103px;
+
+}
+
+ul {
+    padding-left: 10px;
+}
+
+li {
+    padding: 2px;
+    list-style: none;
+
 }
