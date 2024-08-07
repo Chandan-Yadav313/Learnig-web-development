@@ -45,33 +45,50 @@ footer {
 main {
     background-color: black;
     height: calc(100vh - 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
     position: relative;
 }
 
-.menu-playback {
+.menu:hover {
+    background-color: lightblue;
+}
+
+.menu-options {
     position: absolute;
     background-color: white;
-    top: 6px;
-    width: 90px;
-
+    top: 3px;
+    min-width:  160px;
+    display: none;
+    padding-left: 0px;
 }
-.menu-audio {
-    position: absolute;
-    background-color: white;
-    top: 6px;
-    width: 103px;
 
+.menu:hover .menu-options {
+    display: block;
 }
+
 
 ul {
     padding-left: 10px;
 }
 
 li {
+    margin-left: 3px;
+    margin-right: 3px;
     padding: 2px;
     list-style: none;
 
+}
+li:hover{
+    background-color:gainsboro;
+}
+.inputVideo{
+    display: none;
+}
+.video{
+    height: 100%;
 }
