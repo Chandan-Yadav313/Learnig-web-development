@@ -12,16 +12,19 @@
 </head>
 
 <body>
+    <!-- #Header Section -->
     <header>
         <div class="title-bar">
-            <img src="./VLC_icon.png" alt="vlc logo" class="title-image">
+            <img src="./VLC_icon.png" alt="VLC-Logo" class="title-image">
             <h1 class="title">VLC media player</h1>
         </div>
         <div class="menu-bar">
+            <!--*Open Button -->
             <div class="menu">
                 <div class="menu-btn" id="open">Open</div>
                 <input type="file" class="inputVideo" id="inputvideo">
             </div>
+            <!-- *Playback Button -->
             <div class="menu">
                 <div class="menu-btn" id="playback">Playback</div>
                 <ul class="menu-options">
@@ -29,17 +32,21 @@
                     <li id="speedDown">SpeedDown</li>
                 </ul>
             </div>
+            <!-- *Audio Button -->
             <div class="menu">
                 <div class="menu-btn" id="audio">Audio</div>
                 <ul class="menu-options">
-                    <li class="volumnUp">Volumn Up</li>
-                    <li class="volumnDown">Volumn Down</li>
+                    <li id="volumeUp">Volume Up</li>
+                    <li id="volumeDown">Volume Down</li>
                 </ul>
             </div>
         </div>
     </header>
+    <!-- #Main Section -->
     <main id="main"></main>
+    <!-- #Footer Section -->
     <footer></footer>
     <script src="script.js"></script>
 </body>
+
 </html>
