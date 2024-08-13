@@ -62,7 +62,7 @@ main {
     position: absolute;
     background-color: white;
     top: 3px;
-    min-width:  160px;
+    min-width: 160px;
     display: none;
     padding-left: 0px;
 }
@@ -83,17 +83,61 @@ li {
     list-style: none;
 
 }
-li:hover{
-    background-color:gainsboro;
+
+li:hover {
+    background-color: gainsboro;
 }
-.inputVideo{
+
+.inputVideo {
     display: none;
 }
-.toast{
+
+.toast {
     color: white;
     font-size: 2rem;
     position: fixed;
     top: 80px;
     right: 55px;
     display: none;
+}
+
+.videoControls {
+    position: relative;
+}
+
+.controls {
+    position: absolute;
+    bottom: 4px;
+
+
+}
+
+.fa-solid {
+    border: 1px solid gray;
+    color: grey;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: -1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+.fa-play {
+    font-size: 15px;
+    margin: 2px;
+    margin-bottom: 1px;
+}
+.fa-pause{
+    font-size: 15px;
+    margin-bottom: 1px;
+    margin-right: 5px;
+    margin-left: -4px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+i:hover {
+    border: 1px solid rgb(0, 153, 255);
 }

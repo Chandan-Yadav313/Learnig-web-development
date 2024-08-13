@@ -21,7 +21,7 @@ const fileSelected = (obj) => {
     videoElement.src = link;
     videoElement.style.height = "100%"
     videoPlayer.appendChild(videoElement);
-    videoElement.play();
+    videoElement.play(); 
     videoElement.volume = 0.0;
 }
 inputVideo.addEventListener("change", fileSelected);
@@ -68,14 +68,15 @@ const volumeDown = document.querySelector("#volumeDown");
 /*****Volumn Up********/
 const volumeUpHandler = () => {
     const videoElement = document.querySelector("video");
-    if (videoElement == null || videoElement.volume > 0.9) {
+    if (videoElement == null) {
         return;
     }
-    if (videoElement.volume < 1.0) {
-        videoElement.volume = videoElement.volume + 0.1;
-        console.log("volume up", videoElement.volume);
-        showToast("Volume Up: " + (Math.round(videoElement.volume * 100)) + "%");
+    if (videoElement.volume > 0.9) {
+        return;
     }
+    videoElement.volume = videoElement.volume + 0.1;
+    console.log("volume up", videoElement.volume);
+    showToast("Volume Up: " + (Math.round(videoElement.volume * 100)) + "%");
 }
 /*****Volumn Down********/
 const volumeDownHandler = () => {
@@ -97,9 +98,30 @@ volumeUp.addEventListener("click", volumeUpHandler);
 
 function showToast(indicator) {
     toast.textContent = indicator;
-
     toast.style.display = "block";
     setTimeout(function () {
         toast.style.display = "none";
     }, 1000);
 }
+/**request Play**/
+const play = document.querySelector("#play");
+const playButtonHandler = () => {
+    const videoElement = document.querySelector("video");
+    videoElement.play();
+}
+play.addEventListener("click", playButtonHandler);
+
+/**request pause**/
+const pause = document.querySelector("#pause");
+const pauseButtonHandler = () => {
+    const videoElement = document.querySelector("video");
+    videoElement.pause();
+}
+pause.addEventListener("click", pauseButtonHandler);
+
+/**Full Screen Request**/
+const fullScreen = document.querySelector("#fullScreen");
+const fullScreenHandler = () =>{
+    videoPlayer.requestFullscreen();
+}
+fullScreen.addEventListener("click", fullScreenHandler);
