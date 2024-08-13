@@ -89,6 +89,11 @@ li:hover{
 .inputVideo{
     display: none;
 }
-.video{
-    height: 100%;
+.toast{
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    top: 80px;
+    right: 55px;
+    display: none;
 }

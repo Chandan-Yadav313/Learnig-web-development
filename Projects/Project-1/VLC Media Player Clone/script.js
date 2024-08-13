@@ -1,5 +1,5 @@
 
-
+const toast = document.querySelector(".toast");
 
 // code for click on open botton to open file.
 const openVideo = document.querySelector("#open");
@@ -19,6 +19,7 @@ const fileSelected = (obj) => {
     const videoElement = document.createElement("video");
     videoElement.setAttribute("class", "video");
     videoElement.src = link;
+    videoElement.style.height = "100%"
     videoPlayer.appendChild(videoElement);
     videoElement.play();
     videoElement.volume = 0.0;
@@ -41,11 +42,11 @@ const speedUpHandler = () => {
     }
     const speedUp = videoElement.playbackRate + 0.5;
     videoElement.playbackRate = speedUp;
-    console.log("SpeedUp", speedUp);
+    showToast("SpeedUp: " + speedUp + "x");
 }
 speedUp.addEventListener("click", speedUpHandler);
-/**************SpeedDown**********/
 
+/**************SpeedDown**********/
 const speedDownHandler = () => {
     const videoElement = document.querySelector("video");
     if (videoElement == null) {
@@ -54,7 +55,7 @@ const speedDownHandler = () => {
     if (videoElement.playbackRate > 0) {
         const speedDown = videoElement.playbackRate - 0.5;
         videoElement.playbackRate = speedDown;
-        console.log("SpeedDown", speedDown);
+        showToast("SpeedDown: " + speedDown + "x");
     }
 
 }
@@ -67,17 +68,16 @@ const volumeDown = document.querySelector("#volumeDown");
 /*****Volumn Up********/
 const volumeUpHandler = () => {
     const videoElement = document.querySelector("video");
-    if (videoElement == null) {
+    if (videoElement == null || videoElement.volume > 0.9) {
         return;
     }
-    if (videoElement.volume >= 0.9) {
-        return;
+    if (videoElement.volume < 1.0) {
+        videoElement.volume = videoElement.volume + 0.1;
+        console.log("volume up", videoElement.volume);
+        showToast("Volume Up: " + (Math.round(videoElement.volume * 100)) + "%");
     }
-    videoElement.volume = videoElement.volume + 0.1;
-    console.log("volume up", videoElement.volume)
-
 }
-/*****Volumn Up********/
+/*****Volumn Down********/
 const volumeDownHandler = () => {
     const videoElement = document.querySelector("video");
     if (videoElement == null) {
@@ -88,7 +88,18 @@ const volumeDownHandler = () => {
     }
     videoElement.volume = videoElement.volume - 0.1;
     console.log("volume Down", videoElement.volume);
-
+    showToast("Volume Down: " + (Math.round(videoElement.volume * 100)) + "%");
 }
 volumeDown.addEventListener("click", volumeDownHandler);
 volumeUp.addEventListener("click", volumeUpHandler);
+
+/**Show toast message***/
+
+function showToast(indicator) {
+    toast.textContent = indicator;
+
+    toast.style.display = "block";
+    setTimeout(function () {
+        toast.style.display = "none";
+    }, 1000);
+}
