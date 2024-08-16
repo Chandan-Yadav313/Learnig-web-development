@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform-Rotate</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .box {
+        height: 200px;
+        width: 200px;
+        transition-duration: 1.5s;
+    }
+
+    .one {
+        background-color: brown;
+
+        &:hover {
+            transform: scaleX(150%);
+        }
+    }
+
+    .two {
+        background-color: chartreuse;
+
+        &:hover {
+            transform: scaleY(50%) rotate(50deg);
+
+        }
+
+
+    }
+
+    .three {
+        background-color: darkgreen;
+
+        &:hover {
+            transform: scale(150%);
+
+        }
+    }
+</style>
+
+<body>
+    <h1>Scale</h1>
+    <div class="box one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolores exercitationem sequi
+        a odio ipsam consectetur debitis dolorem at ipsa.</div>
+    <div class="box two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem beatae doloremque modi quia
+        nesciunt laudantium dolorum odit placeat culpa.</div>
+    <div class="box three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem beatae doloremque modi
+        quia nesciunt laudantium dolorum odit placeat culpa.</div>
+</body>
+
+</html>
