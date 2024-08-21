@@ -4,81 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transform-Translate</title>
+    <title>Transition</title>
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
 
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
+    body {
+        height: 100vh;
+    }
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Transform-Rotate</title>
-    </head>
-    <style>
-        * {
-            box-sizing: border-box;
+    .box {
+        height: 200px;
+        width: 200px;
+    }
+
+    .one {
+        background-color: brown;
+        transition-duration: 2s;
+        /* transition-delay: 2s; */
+        transition-property: width, color, background-color;
+        transition-timing-function: ease-in;
+
+        &:hover {
+            width: 50vw;
+            background-color: rgb(175, 65, 205);
+            color: aliceblue;
+
         }
+    }
 
-        body {
-            height: 100vh;
-        }
-
-        .box {
-            height: 200px;
-            width: 200px;
-        }
-
-        .one {
-            background-color: brown;
-            transition-duration: 2s;
-            /* transition-delay: 2s; */
-            transition-property: width, color;
-            transition-timing-function: ease-in;
-
-            &:hover {
-                width: 50vw;
-                background-color: burlywood;
-                color: aliceblue;
-
-            }
-        }
-
-        .two {
-            background-color: chartreuse;
-            transition-duration: 1.5s;
-            /* transition-delay: 2s; */
-            transition-property: width, color;
-            transition-timing-function: ease-in;
+    .two {
+        background-color: chartreuse;
+        transition-duration: 1.5s;
+        /* transition-delay: 2s; */
+        transition-property: width, color, background-color;
+        transition-timing-function: ease-in;
 
 
-            &:hover {
-                width: 100vw;
-                background-color: burlywood;
-                color: aliceblue;
-
-            }
-
+        &:hover {
+            width: 100vw;
+            background-color: rgb(215, 41, 198);
+            color: aliceblue;
 
         }
 
-        .three {
-            background-color: darkgreen;
-            transition-duration: 1s;
-            transition-delay: 2s;
-            transition-property: width, color;
 
-            &:hover {
-                width: 70vw;
-                background-color: burlywood;
-                color: aliceblue;
-            }
+    }
+
+    .three {
+        background-color: darkgreen;
+        transition-duration: 1s;
+        transition-delay: 2s;
+        transition-property: width, color, background-color;
+
+        &:hover {
+            width: 70vw;
+            background-color: rgb(151, 23, 179);
+            color: aliceblue;
         }
-    </style>
-
+    }
+</style>
     <body>
-        <h1>Scale</h1>
+        <h1>Transition</h1>
         <div class="box one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolores exercitationem
             sequi
             a odio ipsam consectetur debitis dolorem at ipsa.</div>
@@ -89,8 +78,4 @@
             modi
             quia nesciunt laudantium dolorum odit placeat culpa.</div>
     </body>
-
-    </html>
-</body>
-
 </html>
