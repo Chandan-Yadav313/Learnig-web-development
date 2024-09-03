@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+</head>
+<style>
+    .container {
+        height: 500px;
+        width: 500px;
+        background-color: slategray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: bg-changer;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: hotpink;
+        animation-name: journey-to-circle;
+        animation-duration: 3s;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+    }
+    @keyframes bg-changer {
+        25%{
+            background-color: darkslateblue;
+        }
+        75%{
+            background-color: indigo;
+        }
+        
+    }
+
+    @keyframes journey-to-circle {
+        25% {
+            background-color: rgb(218, 148, 148);
+            border-radius: 25%;
+
+
+        }
+
+        50% {
+            background-color: brown;
+            border-radius: 50%;
+
+        }
+
+        100% {
+            background-color: black;
+            border-radius: 75%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

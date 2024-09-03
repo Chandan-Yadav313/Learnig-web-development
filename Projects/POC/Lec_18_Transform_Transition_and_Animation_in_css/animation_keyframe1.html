@@ -14,6 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
 
     .box {
@@ -24,17 +25,24 @@
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
+        position: absolute;
     }
-    @keyframes journey-to-circle{
-        25%{
-            background-color:rgb(218, 148, 148);
+
+    @keyframes journey-to-circle {
+        25% {
+            background-color: rgb(218, 148, 148);
             border-radius: 25%;
+
+
         }
-        50%{
+
+        50% {
             background-color: brown;
             border-radius: 50%;
+            
         }
-        100%{
+
+        100% {
             background-color: black;
             border-radius: 75%;
         }
