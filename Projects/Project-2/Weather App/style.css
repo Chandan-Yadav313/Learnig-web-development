@@ -1,0 +1,58 @@
+body {
+    background-color: #bdbdbd;
+}
+
+header {
+    height: 110px;
+    background-color: rgb(26 51 75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid white;
+    background-color: rgb(26 51 75);
+    padding: 5px;
+    width: 330px;
+    font-size: 22px;
+    color: aliceblue;
+}
+
+input::placeholder {
+    color: aliceblue;
+}
+
+button {
+    height: 35px;
+    width: 72px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+
+}
+
+main {
+    height: calc(100vh - 120px);
+    background-color: #263238;
+    color: azure;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.location {
+    font-size: 30px;
+}
