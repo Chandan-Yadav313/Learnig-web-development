@@ -22,10 +22,9 @@
 // console.log(typeof varName);
 
 // conditional statements
-
-// 1. if statement
+//  if statement
 // let num = 10;
-// if(num%5==0){
+// if (num % 5 == 0) {
 //     console.log("number divided by 5")
 // }
 
@@ -76,8 +75,8 @@
 // for(let i = 1; i<=10; i++){
 //     console.log(i);
 // }
-// let  num = 20
 
+// let  num = 20
 // let num = 100;
 // for(let i = 1; i < num; i++){
 //     if(i % 3 == 0){
@@ -90,15 +89,14 @@
 // }
 
 // function in javaScript
+
 // let a = 4;
 // let b = 5;
-
 // function addTwoNumbers(x, y) {
 //     let z = x + y;
 //     return z;
-
+//     // console.log(z)
 // }
-
 // let result = addTwoNumbers(a, b);
 // console.log("result", result);
 
@@ -120,10 +118,15 @@
 // console.log(boy1);
 // console.log(boy2);
 // console.log(boy1[0])
+// console.log(boy1[1])
 // console.log(boy1[2])
 // console.log(boy1[3])
 // console.log(boy1[4])
+// console.log(boy1[5])
+// console.log(boy1[6])
 
+// let boy1 = 'Chandan';
+// let boy2 = 'Rohan';
 // let sentence = `${boy2} is friend of ${boy1}.`;
 // console.log(sentence);
 

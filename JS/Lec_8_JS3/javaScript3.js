@@ -9,8 +9,11 @@
 // fn();
 // console.log("number :", n);
 
-// var a = "Chandan";
-// var a = 10;
+/*var a = "Chandan";
+// console.log(a);
+var a = 10;
+console.log(a);*/
+
 // let b ="This";
 // {
 //     let b = "Harry";
@@ -29,8 +32,8 @@
 //     console.log(num) 
 // }
 // b();
-let arr = [10, 20, 41, 45, 50];
-let arr2 = arr;
+// let arr = [10, 20, 41, 45, 50];
+// let arr2 = arr;
 // function fn(para){
 //     console.log(para)
 // }
@@ -38,8 +41,8 @@ let arr2 = arr;
 // fn("Chandan");
 // fn(arr);
 
-// const function1 = function (){
-//     console.log("para")
+// const function1 = function (para){
+//     console.log(para)
 // }
 // function1(10);
 // function1("Chandan");
@@ -53,11 +56,11 @@ let arr2 = arr;
 // console.log("----------------------");
 // function2();
 
-function bigger(para){
-    console.log("I am bigger");
-    para();   
-}
-function smaller(){
-    console.log("I am smaller");
-}
-bigger(smaller);
+// function bigger(para){
+//     console.log("I am bigger");
+//     para();   
+// }
+// function smaller(){
+//     console.log("I am smaller");
+// }
+// bigger(smaller);

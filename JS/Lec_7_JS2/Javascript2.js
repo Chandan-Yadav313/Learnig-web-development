@@ -3,7 +3,6 @@
 
 // for(let i=0; i<arr.length; i++){
 //     console.log("Value of" , i , "index is" , arr[i]);
-
 // }
 
 // Methods of array
@@ -17,14 +16,16 @@
 // console.log(arr);
 
 // arr.shift();
-// console.log(arr)
+// console.log(arr);
 
 // arr.unshift(6);
 // console.log(arr);
 
-// console.log(arr.slice(1, 3));
+// let sliceArray = arr.slice(1, 3);
+// console.log("slice", sliceArray);
 
-// console.log(arr.splice(3, 3));
+// arr.splice(3, 3);
+// console.log("splice", arr);
 
 // console.log("Index of 1 is", arr.indexOf(1));
 // console.log("Index of 1 is", arr.indexOf(30));
@@ -41,19 +42,22 @@
 
 // let fruit = ["apple", "banana", "cherry", "grapes", "mangoe"];
 // console.log(fruit);
+// console.log(fruit.join("+"));
 
-// function advancedManipulation(fruit) {
-//     let firstposition = fruit.shift();
-//     fruit.unshift("new");
-//     fruit.unshift(firstposition);
-//     console.log(fruit);
-
-//     fruit.splice(2, 1);
-
-//     fruit.join(",");
-//     return fruit;
-// }
-// console.log(advancedManipulation(fruit));
+/*function advancedManipulation(fruit) {
+    // remove from statrting
+    let firstposition = fruit.shift();
+    // add in starting
+    fruit.unshift("new");
+    fruit.unshift(firstposition);
+    console.log(fruit);
+    // remove any element from the middle of the array
+    fruit.splice(2, 1);
+    // join array from a symbol like + , and $
+    let join = fruit.join(",");
+    return join;
+}
+console.log(advancedManipulation(fruit));*/
 
 // const arr = [2,4,5,7,5,4]
 // console.log(arr);
@@ -110,13 +114,14 @@
 // console.log(name.replace("dan", "du"));
 // let name = "Chandan, Madhu";
 // console.log("index of", name.indexOf("Chandan"));
+// console.log(name.length)
 // console.log(name.substring(0, 5));
 // let word = name.split(" ");
 // console.log(word);
 // let name = "Chandan Madhu";
 // let words = name.split(" ");
 // console.log(words); // Output: ["Hello,", "World!"]
-// console.log(words.join(""))
+// console.log(words.join("_"))
 
 // let fruit = "       Banana         ";
 // console.log(fruit);
