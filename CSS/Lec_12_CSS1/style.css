@@ -4,7 +4,7 @@
 h2{
     color: lightgoldenrodyellow;
     background-color: purple;
-    background-image: -moz-radial-gradient(purple, white);
+    background-image: radial-gradient(purple, rgb(43, 41, 41));
     border-radius: 3px;
     margin: 0;
     padding: 0;
