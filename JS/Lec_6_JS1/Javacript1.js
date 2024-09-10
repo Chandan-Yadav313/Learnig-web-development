@@ -90,8 +90,8 @@
 
 // function in javaScript
 
-// let a = 4;
-// let b = 5;
+let a = 4;
+let b = 5;
 // function addTwoNumbers(x, y) {
 //     let z = x + y;
 //     return z;

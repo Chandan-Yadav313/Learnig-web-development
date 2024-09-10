@@ -55,14 +55,14 @@
 
 /**Asynchronous - A piece of code execute first after that another part of code which is delayed by setTimeout those code will execute***/
 
-console.log("Before");
+// console.log("Before");
 
-function fn(){
-    console.log("Hi, I am just after the before");
+// function fn(){
+//     console.log("Hi, I am just after the before");
     
-}
-setTimeout(fn, 2000)
-console.log("After");
+// }
+// setTimeout(fn, 2000)
+// console.log("After");
 
 // let b = true;
 // console.log("Before");

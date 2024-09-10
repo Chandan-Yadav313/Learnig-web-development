@@ -1,8 +1,9 @@
-console.log("Hello DOM");
+// console.log("Hello DOM:)");
 /** *
  * ----------------READ--------------------
  */
 // const html = document.children[0];
+// console.log(html);
 // const body = html.children[1];
 // console.log(body.innerHTML);
 // console.log(body.children)
