@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+
+    <!-- react Algorithm -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <!-- react dom algo -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- TRANSPILER -> TRANSLATOR -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React</title>
+</head>
+
+<body>
+    <h1>React Manipulation Example</h1>
+    <div class="root"></div>
+</body>
+<script type="text/babel">
+    const root = document.querySelector(".root");
+
+    //   function return --> html(jsx)
+    // props is just name, we can put any name
+    function Heading(props) {
+        const name = props.name;
+        const age = props.age;
+        return <h1>Hi, My name is {name} and I am {age} year old:)</h1>;
+    }
+    function HeadingParent() {
+        return <div>
+            <Heading name={"Chandan"} age={25}></Heading>
+            <Heading name={"Madhu"} age={23}></Heading>
+            <Heading name={"Rohan"} age={24}></Heading>
+            <Heading name={"Akash"} age={22}></Heading>
+            <Heading name={"Rishi"} age={22}></Heading>
+        </div>
+    }
+    // ReactDOM
+    ReactDOM.render(<HeadingParent></HeadingParent>, root);
+</script>
+
+</html>
