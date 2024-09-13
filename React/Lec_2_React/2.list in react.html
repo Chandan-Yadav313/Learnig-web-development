@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+
+    <!-- react Algorithm -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <!-- react dom algo -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- TRANSPILER -> TRANSLATOR -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>List In React</h1>
+    <div class="root"></div>
+</body>
+<script type="text/babel">
+
+    //***********************************List In React*********************************
+    // Dumb way of creating list through react js
+
+    /* const root = document.querySelector(".root");
+     function ShoppingList() {
+         let cart = ["Apple", "Orange", "Banana", "Mango", "Grapes"];
+         return <ul>
+             <li>{cart[0]}</li>
+             <li>{cart[1]}</li>
+             <li>{cart[2]}</li>
+             <li>{cart[3]}</li>
+         </ul>
+     }
+     // ReactDOM
+     ReactDOM.render(<ShoppingList></ShoppingList>, root);*/
+
+     //traditional way of crating list in react js
+    const root = document.querySelector(".root");
+    function ListComponent(elem) {
+        return <li>
+            <div>{elem}</div>
+            <button>Click</button>
+        </li>
+    }
+    function ShoppingList() {
+        let cart = ["Apple", "Orange", "Banana", "Mango", "Grapes"];
+        return <ul>{cart.map(ListComponent)}</ul>
+    }
+    // ReactDOM
+    ReactDOM.render(<ShoppingList></ShoppingList>, root);
+</script>
+
+</html>
