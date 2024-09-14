@@ -44,20 +44,35 @@
      // ReactDOM
      ReactDOM.render(<ShoppingList></ShoppingList>, root);*/
 
-     //traditional way of crating list in react js
-    const root = document.querySelector(".root");
+    //traditional way of crating list in react js
+    // 1..........
+    /*const root = document.querySelector(".root");
     function ListComponent(elem) {
-        return <li>
-            <div>{elem}</div>
+        return <li><div>{elem}</div>
             <button>Click</button>
         </li>
     }
-    function ShoppingList() {
-        let cart = ["Apple", "Orange", "Banana", "Mango", "Grapes"];
+
+    function ShoppingCart() {
+        let cart = ["Apple", "Orange", "Banana", "Mangoe", "Grapes"];
         return <ul>{cart.map(ListComponent)}</ul>
     }
     // ReactDOM
-    ReactDOM.render(<ShoppingList></ShoppingList>, root);
+    ReactDOM.render(<ShoppingCart></ShoppingCart>, root);*/
+
+    // 2.............
+    /*const root = document.querySelector(".root");
+    function ShoppingCart() {
+        let cart = ["Apple", "Orange", "Banana", "Mangoe", "Grapes"];
+        return <ul>{cart.map((elem, index) => {
+            return <li key={index}><div>{elem}</div>
+                <button>Click</button>
+            </li>
+
+        })}</ul>
+    }
+    // ReactDOM
+    ReactDOM.render(<ShoppingCart></ShoppingCart>, root);*/
 </script>
 
 </html>

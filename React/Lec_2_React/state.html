@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+
+    <!-- react Algorithm -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <!-- react dom algo -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- TRANSPILER -> TRANSLATOR -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React</title>
+</head>
+<style>
+    * {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>State In React</h1>
+    <div id="root"></div>
+</body>
+<script type="text/babel">
+    /*const rootElem = document.getElementById("root");
+
+    // *******************************State in React*************************************
+     function Counter() {
+         const [count, countValue] = React.useState(0);
+         // count on which countValue function update operation perform
+         // const count = arr[0];
+         // countValue which update count;
+         // const countValue = arr[1];
+ 
+         function increamentHandler() {
+             if (count == 10) {
+                 return;
+             }
+             countValue(count + 1);
+ 
+         }
+         function decreamentHnadler() {
+             if (count == 0) {
+                 return;
+             }
+             countValue(count - 1);
+         }
+ 
+         return <h1>
+             <div>
+                 count: {count}
+             </div>
+             <button onClick={increamentHandler}>Increament</button>
+             <button onClick={decreamentHnadler}>Decreament</button>
+         </h1>
+ 
+     }
+     ReactDOM.render(<Counter></Counter>, rootElem);*/
+
+    //===============================================================================================================================================
+    /* const rootElem = document.getElementById("root");
+     function MultiCounter() {
+         // Initialize three counters with default values of 1, 2, and 3
+         const [count1, setCount1] = React.useState(1);
+         const [count2, setCount2] = React.useState(2);
+         const [count3, setCount3] = React.useState(3);
+ 
+         return (
+             <div>
+ 
+                 <h2>Counter 1: {count1}</h2>
+                 <button onClick={() => setCount1(count1 + 1)}>Increment Counter 1</button>
+                 <button onClick={() => setCount1(count1 - 1)}>Decrement Counter 1</button>
+ 
+ 
+                 <h2>Counter 2: {count2}</h2>
+                 <button onClick={() => setCount2(count2 + 1)}>Increment Counter 2</button>
+                 <button onClick={() => setCount2(count2 - 1)}>Decrement Counter 2</button>
+ 
+ 
+                 <h2>Counter 3: {count3}</h2>
+                 <button onClick={() => setCount3(count3 + 1)}>Increment Counter 3</button>
+                 <button onClick={() => setCount3(count3 - 1)}>Decrement Counter 3</button>
+             </div>
+         );
+     }
+     ReactDOM.render(<MultiCounter></MultiCounter>, rootElem);*/
+
+
+    //==========================================================================================================================================
+    /*const rootElem = document.getElementById("root");
+    function Counter(props) {
+        const [count, countValue] = React.useState(props.initializeValue);
+        // count on which countValue function update operation perform
+        // const count = arr[0];
+        // countValue which update count;
+        // const countValue = arr[1];
+
+        function increamentHandler() {
+            if (count == 10) {
+                return;
+            }
+            countValue(count + 1);
+
+        }
+        function decreamentHnadler() {
+            if (count == 0) {
+                return;
+            }
+            countValue(count - 1);
+        }
+
+        return <h1>
+            <div>
+                count: {count}
+            </div>
+            <button onClick={increamentHandler}>Increament</button>
+            <button onClick={decreamentHnadler}>Decreament</button>
+        </h1>
+    }
+    function CounterParent() {
+        return <div
+        ><Counter initializeValue={1}></Counter>
+            <Counter initializeValue={2}></Counter>
+            <Counter initializeValue={3}></Counter>
+            <Counter initializeValue={4}></Counter>
+        </div>
+
+    }
+    ReactDOM.render(<CounterParent></CounterParent>, rootElem);*/
+</script>
+
+</html>
