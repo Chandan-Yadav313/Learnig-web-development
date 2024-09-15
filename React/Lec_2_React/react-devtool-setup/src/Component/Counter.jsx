@@ -21,12 +21,12 @@ function Counter(props) {
         countValue(count - 1);
     }
 
-    return <h1>
+    return (<h1>
         <div>
             count: {count}
         </div>
         <button onClick={increamentHandler}>Increament</button>
         <button onClick={decreamentHnadler}>Decreament</button>
-    </h1>
+    </h1>);
 }
-export default Counter
+export default Counter;
