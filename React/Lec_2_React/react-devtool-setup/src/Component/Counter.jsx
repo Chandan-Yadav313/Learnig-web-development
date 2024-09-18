@@ -27,6 +27,6 @@ function Counter(props) {
         </div>
         <button onClick={increamentHandler}>Increament</button>
         <button onClick={decreamentHnadler}>Decreament</button>
-    </h1>);
+    </h1>); 
 }
 export default Counter;
