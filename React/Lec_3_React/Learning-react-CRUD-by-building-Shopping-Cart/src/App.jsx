@@ -5,7 +5,7 @@ import ShoppingList from './Shopping-Cart/ShoppingList';
 function App() {
   return (
     <div className='Shopping-Cart'>
-      <h1>Shopping-Cart</h1>
+      <h1>ShoppingCart</h1>
       {/* <InputBox></InputBox> */}
       <ShoppingList></ShoppingList>
     </div>

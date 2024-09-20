@@ -109,3 +109,10 @@ input {
   width: 18rem;
   padding: 10px;
 }
+.remove-button{
+  padding: 8px;
+  padding-top: 1px;
+  margin: 5px;
+  border-radius: 50%;
+  
+}
