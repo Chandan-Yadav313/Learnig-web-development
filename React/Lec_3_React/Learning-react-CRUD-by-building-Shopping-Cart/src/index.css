@@ -17,7 +17,7 @@ body {
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #24242420;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -116,3 +116,8 @@ input {
   border-radius: 50%;
   
 }
+::selection {
+  background-color: yellow;  /* Change background color of selected text */
+  color: black;  /* Change text color of selected text */
+}
+
