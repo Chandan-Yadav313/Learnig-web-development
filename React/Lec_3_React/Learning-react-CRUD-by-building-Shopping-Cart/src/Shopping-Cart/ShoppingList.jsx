@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-
+import InputBox from '../InputBox';
+import ListItem from '../ListItem';
 function ShoppingList() {
     const [content, setContent] = useState("");
     // add list through the empty array state
@@ -11,7 +12,7 @@ function ShoppingList() {
 
     const handleAddItem = () => {
         // ========================in react this idea must not use=======================
-        
+
         //    input value             
         /*const newItem = content;
         // add item to the array
@@ -20,57 +21,51 @@ function ShoppingList() {
         setContent("");*/
         // ===================manually copy task=========================================
         //    input value
-       /* const newItem = content;
+        const newItem = content;
         // add item to the array
-        const newArr=[];
-        for(let i = 0; i < tasks.length; i++){
+        const newArr = [];
+        for (let i = 0; i < tasks.length; i++) {
             newArr.push(tasks[i]);
         }
         newArr.push(newItem);
         setTasks(newArr);
         // empty input box or content
-        setContent("");*/
+        setContent("");
         // ===========================Spread Operator=================================================
-         // input value
-       /* const newItem = content;
-        // add item to the array or copy item in newArr throught Spread operator
-        const newArr = [...tasks];
-        newArr.push(newItem);
-        setTasks(newArr);
-        // empty input box or content
-        setContent("");*/
+        // input value
+        /* const newItem = content;
+         // add item to the array or copy item in newArr throught Spread operator
+         const newArr = [...tasks];
+         newArr.push(newItem);
+         setTasks(newArr);
+         // empty input box or content
+         setContent("");*/
         //============================================================================================
         // input value
-        const newItem = content;
-        setTasks([...tasks, newItem]);  // Copy tasks and add newItem in one step
-        // empty input box or content
-        setContent("");
+        /* const newItem = content;
+         setTasks([...tasks, newItem]);  // Copy tasks and add newItem in one step
+         // empty input box or content
+         setContent("");*/
         //===========================================================================================
 
     }
 
-    const handleRemove = () => {
-        console.log("removed item");
+    const handleRemove = (index) => {
+        // HW-> search inbuilt function to do this operaation instead of uisng this meathod
+        const filteredArr = [];
+        for (let i = 0; i < tasks.length; i++) {
+
+            if (i != index) {
+                filteredArr.push(tasks[i]);
+            }
+        }
+        setTasks(filteredArr);
     }
     // return-> jo bhi state me rahega mai vaisa hi ui render karung
     return (
         <div className='container'>
-            <div className='input-box'>
-                <input type="text" value={content} onChange={inputHandle} />
-                <button onClick={handleAddItem}>Add Item</button>
-            </div>
-
-            <div className='shopping-list'>
-                <ul className='list'>
-                    {tasks.map((item) => {
-                        return <li>
-                            <span>{item}</span>
-                            <button className='remove-button' onClick={handleRemove}>x</button>
-                        </li>
-                    })}
-
-                </ul>
-            </div>
+            <InputBox inputHandle={inputHandle} content={content} handleAddItem={handleAddItem}></InputBox>
+            <ListItem handleRemove={handleRemove} tasks={tasks}></ListItem>
         </div>
 
     )
